@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        .backimg {
+            height: 497px;
+            max-width: 100%;
+            position: relative;
+            top: 1px;
+            background-size: cover;
+            background-position: center;
+            background-image: url(top1.jpeg.jpg);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            padding: 20px 77px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            margin-left: 710px;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 22px;
+        }
+
+        .backimg .tagebook {
+            font-size: xx-large;
+            font-weight: 600;
+            color: #fff;
+            margin: 64px 1px 20px 97px;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            color: #fff;
+            word-break: break-all;
+        }
+
+        .backimg .tagtop {
+            color: yellow;
+            position: absolute;
+            top: 104px;
+            left: 108px;
+        }
+
+        .backimg .tagapply {
+            font-family: "Jost", sans-serif;
+            font-weight: 496;
+            font-size: 22px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 8px 28px 11px 28px;
+            border-radius: 50px;
+            transition: 0.5s;
+            margin: 0px 0 0 94px;
+            height: 25px;
+            color: #fff;
+            width: 112px;
+            background-color: orange;
+        }
+
+        .backimg .rightimg img {
+            display: flex;
+            float: right;
+            height: 428px;
+            width: 305px;
+            position: absolute;
+            right: 220px;
+            top: 59px;
+        }
+
+        .backimg .row {
+            background-color: rgba(225, 146, 0, 0.805);
+            height: 86px;
+            width: 709px;
+            position: relative;
+            top: 109px;
+            left: 2px;
+        }
+
+        .backimg .row .border1 img {
+            border-radius: 1343px;
+            height: 63px;
+            width: 66px;
+            position: absolute;
+            top: 15px;
+            left: 150px;
+        }
+
+        .backimg .row .border2 img {
+            border-radius: 1343px;
+            height: 63px;
+            width: 66px;
+            position: absolute;
+            top: 15px;
+            left: 204px;
+        }
+
+        .backimg .row .border3 img {
+            border-radius: 1343px;
+            height: 63px;
+            width: 66px;
+            position: absolute;
+            top: 15px;
+            left: 261px;
+        }
+
+        .backimg .row .rateing {
+            color: black;
+            font-size: 30px;
+            position: relative;
+            top: 32px;
+            left: 361px
+        }
+
+        .backimg .row .rateing strong {
+            color: black;
+            font-size: 18px;
+            position: relative;
+            top: -1px;
+            left: 4px;
+        }
+
+        .book .tagb {
+            font-size: 24px;
+            color: black;
+            font-weight: 700;
+            position: relative;
+            top: 18px;
+            left: 528px;
+        }
+
+        .book .bookpara {
+            word-break: break-all;
+            color: black;
+            width: 338px;
+            position: relative;
+            top: 60px;
+            left: -41px
+        }
+
+        .book .fulbook {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: 109px;
+            left: -41px;
+        }
+
+        .book .abbook img {
+            height: 275px;
+            width: 390px;
+            position: relative;
+            top: -58px;
+            left: 186px
+        }
+
+        .book .bookpara .pb1 span {
+            color: pink;
+        }
+
+        .preview .tagpre {
+            color: black;
+            font-size: 28px;
+            font-weight: 600;
+            position: relative;
+            top: -15px;
+        }
+
+        .preview .prepara {
+            width: 804px;
+        }
+
+
+        .preview .prep3 {
+            background-color: aliceblue;
+            height: 134px;
+            width: 665px;
+            border-radius: 4px;
+            color: black;
+            position: relative;
+            top: 27px;
+        }
+
+        .preview .prep3 .conp3 {
+            color: black;
+            text-align: center;
+            width: 545px;
+            position: relative;
+            top: -9px;
+            left: 50px;
+            font-weight: bold;
+        }
+
+        .preview .prep3 .MO {
+            position: relative;
+            top: 1px;
+        }
+
+        .preview .prep3 .ho {
+            font-size: 89px;
+            color: orange;
+            text-align: center;
+            margin: -34px;
+            position: relative;
+            top: -56px;
+        }
+
+
+        .preview .prep8 {
+            width: 804px;
+            top: 21px;
+            position: relative;
+            left: -5px;
+        }
+
+        .preview .fulconpre {
+            position: relative;
+            top: 65px;
+            float: right;
+            width: 817px;
+        }
+
+        .preview .titlepre {
+            text-align: center;
+            font-size: 39px;
+            color: black;
+            font-weight: bolder;
+
+        }
+
+        .gridcontainer {
+            display: grid;
+            border: 2px solid pink;
+            width: 345px;
+            height: 442px;
+            position: absolute;
+            left: 28px;
+            margin: 16px;
+            border-radius: 5px;
+
+        }
+
+        .gridcontainer .item {
+            color: black;
+            width: 100px;
+        }
+
+        .gridcontainer .item .item1 {
+            position: relative;
+            left: 22px;
+            background-color: aliceblue;
+            height: 61px;
+            width: 310px;
+            top: 18px;
+            border-radius: 18px;
+        }
+
+        .gridcontainer .item .item1 span {
+            position: relative;
+            top: 23px;
+            left: 13px;
+        }
+
+        .gridcontainer .item .item2 {
+            position: relative;
+            left: 23px;
+            background-color: aliceblue;
+            height: 102px;
+            width: 304px;
+            top: 26px;
+            border-radius: 18px;
+        }
+
+        .gridcontainer .item .item2 span {
+            position: relative;
+            top: 23px;
+            left: 13px;
+        }
+
+        .gridcontainer .item .item3 {
+            position: relative;
+            left: 23px;
+            background-color: aliceblue;
+            height: 102px;
+            width: 304px;
+            top: 33px;
+            border-radius: 18px;
+        }
+
+        .gridcontainer .item .item3 span {
+            position: relative;
+            top: 23px;
+            left: 13px;
+        }
+
+        .gridcontainer .item .item4 span {
+            position: relative;
+            top: 23px;
+            left: 13px;
+        }
+
+        .gridcontainer .item .item4 {
+            position: relative;
+            left: 22px;
+            background-color: aliceblue;
+            height: 61px;
+            width: 310px;
+            top: 38px;
+            border-radius: 18px;
+        }
+
+        .gridcontainer .item .item5 span {
+            position: relative;
+            top: 23px;
+            left: 13px;
+        }
+
+        .gridcontainer .item .item5 {
+            position: relative;
+            left: 22px;
+            background-color: aliceblue;
+            height: 61px;
+            width: 310px;
+            top: 45px;
+            border-radius: 18px;
+        }
+
+        .sophia {
+            position: relative;
+            top: 279px;
+            float: right;
+            width: 740px;
+            margin-right: 0px;
+        }
+
+        .sophia .sophiafulpara {
+            width: 554px;
+        }
+
+        .sophia .nameso {
+            font-size: 41px;
+            position: relative;
+            top: 1px;
+            left: 1px;
+            color: black;
+            font-weight: bold;
+            margin: 13px;
+        }
+
+        .sophia .sophiaimg img {
+            height: 252px;
+            position: relative;
+            top: -188px;
+            left: -336px;
+            border-radius: 1038px;
+            float: left;
+            margin-left: -1px;
+            width: 267px;
+            border: 2px solid yellow;
+        }
+
+        .say1 {
+            box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+            background: #fff;
+            border-top: 4px solid #fff;
+            border-radius: 886px;
+            height: 376px;
+            width: 349px;
+            margin: 30px 10px 10px 79px;
+            position: relative;
+            top: 975px;
+            left: 18px;
+
+        }
+
+        .say1 .redsay1 {
+            background-color: red;
+            width: 134px;
+            height: 114px;
+            position: relative;
+            top: -2px;
+            left: 98px;
+            text-align: center;
+            border-radius: 7px;
+        }
+
+        .say1 .say1img {
+            background-size: 671px;
+            background-position: center;
+            background-image: url(top1.jpeg.jpg);
+            height: inherit;
+        }
+
+        .say1 .say1para {
+            color: #fff;
+            position: relative;
+            top: 216px;
+            width: 938px;
+            left: -106px;
+            width: 315px;
+            word-break: break-all;
+            padding: 25px;
+        }
+
+        .say1 .redsay1 .redmi1 img {
+            border: 2px solid white;
+            border-radius: 1343px;
+            height: 63px;
+            width: 67px;
+            position: absolute;
+            top: 5px;
+            left: 32px;
+        }
+
+        .say1 .redsay1 .redmi1 span {
+            font-size: 22px;
+            color: #fff;
+            position: relative;
+            top: 76px;
+            left: 2px;
+        }
+
+        .say2 {
+            box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+            background: #fff;
+            border-top: 4px solid #fff;
+            border-radius: 6px;
+            height: 376px;
+            width: 349px;
+            margin: 30px 10px 10px 79px;
+            position: relative;
+            top: 567px;
+            left: 401px;
+        }
+
+        .say2 .redsay2 {
+            background-color: red;
+            width: 134px;
+            height: 114px;
+            position: relative;
+            top: -2px;
+            left: 98px;
+            text-align: center;
+            border-radius: 7px;
+        }
+
+        .say2 .say2img {
+            background-size: 671px;
+            background-position: center;
+            background-image: url(top1.jpeg.jpg);
+            height: inherit;
+            position: relative;
+            top: -4px;
+        }
+
+        .say2 .say2para {
+            color: #fff;
+            position: relative;
+            top: 216px;
+            width: 938px;
+            left: -106px;
+            width: 315px;
+            word-break: break-all;
+            padding: 25px;
+        }
+
+        .say2 .redsay2 .redmi2 img {
+            border: 2px solid white;
+            border-radius: 1343px;
+            height: 63px;
+            width: 67px;
+            position: absolute;
+            top: 5px;
+            left: 32px;
+        }
+
+        .say2 .redsay2 .redmi2 span {
+            font-size: 22px;
+            color: #fff;
+            position: relative;
+            top: 76px;
+            left: 2px;
+        }
+
+
+
+        .say3 {
+            box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+            background: #fff;
+            border-top: 4px solid #fff;
+            border-radius: 6px;
+            height: 376px;
+            width: 349px;
+            margin: 30px 10px 10px 79px;
+            position: relative;
+            top: 156px;
+            left: 795px;
+        }
+
+        .say3 .redsay3 {
+            background-color: red;
+            width: 134px;
+            height: 114px;
+            position: relative;
+            top: -2px;
+            left: 98px;
+            text-align: center;
+            border-radius: 7px;
+        }
+
+        .say3 .say3img {
+            background-size: 671px;
+            background-position: center;
+            background-image: url(top1.jpeg.jpg);
+            height: inherit;
+            position: relative;
+            top: -4px;
+        }
+
+        .say3 .say3para {
+            color: #fff;
+            position: relative;
+            top: 216px;
+            width: 938px;
+            left: -106px;
+            width: 315px;
+            word-break: break-all;
+            padding: 25px;
+        }
+
+        .say3 .redsay3 .redmi3 img {
+            border: 2px solid white;
+            border-radius: 1343px;
+            height: 63px;
+            width: 67px;
+            position: absolute;
+            top: 5px;
+            left: 32px;
+        }
+
+        .say3 .redsay3 .redmi3 span {
+            font-size: 22px;
+            color: #fff;
+            position: relative;
+            top: 76px;
+            left: 2px;
+        }
+
+        .allsay {
+            position: relative;
+        }
+
+        .saytitle {
+            text-align: center;
+            color: black;
+            font-size: 35px;
+            font-weight: bold;
+            margin: 985px auto;
+        }
+
+        .contact {
+            background-color: orange;
+            height: 500px;
+            width: 100%;
+            position: relative;
+            top: -1677px;
+
+        }
+
+        .contact .tag {
+            font-size: 57px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .contact .para {
+            color: #fff;
+        }
+
+        .contact .fullcontact {
+            position: relative;
+            top: 104px;
+            float: right;
+            left: -253px;
+        }
+
+        .contact .contactbox {
+            box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+            background: #fff;
+            border-top: 4px solid #fff;
+            border-radius: 16px;
+            height: 367px;
+            width: 427px;
+            margin: 31px 10px 10px 79px;
+            position: relative;
+            top: 47px;
+            left: 38px;
+        }
+
+        .contactbox .head {
+            font-size: 50px;
+            margin: 10px 10px 10px 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .contact .input1 input {
+            height: 30px;
+            width: 166px;
+            margin-left: 21px;
+            margin: 4px;
+            position: relative;
+            top: -26px;
+            left: 15px;
+        }
+
+        .contact .input2 input {
+            height: 30px;
+            width: 166px;
+            margin-left: 21px;
+            margin: 4px;
+            position: relative;
+            top: -197px;
+            left: 218px;
+        }
+
+        .input2 textarea {
+            margin: -145px 10px 10px 10px;
+            height: 70px;
+            width: 150px;
+            position: relative;
+            top: -135px;
+            left: 211px;
+        }
+
+        .contact .input2 {
+            position: relative;
+            top: 1px;
+        }
+
+        .contactbox .submit {
+            font-family: "Jost", sans-serif;
+            font-weight: 496;
+            font-size: 22px;
+            display: inline-block;
+            padding: 8px 28px 11px 28px;
+            border-radius: 50px;
+            transition: 0.5s;
+            margin: 6px 0px 0 54px;
+            height: 25px;
+            color: #fff;
+            width: 259px;
+            background-color: orange;
+        }
+
+        .item .btn {
+            margin: 8px;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="backimg">
+        <div class="header">
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Booking</a>
+                <a href="#">Hotel</a>
+                <a href="#">Charge</a>
+            </nav>
+        </div>
+        <div class="tagtop">Thats a ebook professionals website</div>
+        <div class="tagebook">
+            ebook landing page <br>for professionals
+        </div>
+        <div class="tagapply">
+            Booking
+        </div>
+        <div class="rightimg">
+            <img src="ebookweb44.jpeg.jpg" alt="">
+        </div>
+        <div class="row">
+            <div class="border1">
+                <img src="border.1img.jpeg.jpg" alt="">
+            </div>
+            <div class="border2">
+                <img src="border.2img.jpeg.jpg" alt="">
+            </div>
+            <div class="border3">
+                <img src="border.3img.jpeg.jpg" alt="">
+            </div>
+            <div class="rateing">
+                <b>4.5 .... </b> <strong> customer rateing </strong>
+            </div>
+        </div>
+    </div>
+    <div class="book">
+        <div class="fulbook">
+            <div class="tagb">
+                <B>ABOUT THE BOOK</B>
+            </div>
+            <div class="bookpara">
+                <div class="pb1">
+                    Lorem ipsum dolor <span>sit amet</span> consectetur adipisicing elit. Totam nihil in unde
+                    exercitationem omnis
+                    quae,
+                    deleniti dignissimos tempora quos aspernatur aperiam ipsum nemo laboriosam sed commodi! Est, laborum
+                    architecto.
+                </div>
+                <br>
+                <div class="pb2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati ad aliquid expedita
+                    consequatur sapiente doloremque error ipsa dolorem? Sit officia quam sint praesentium in tempora
+                    ipsa?
+                    Facere, cumque! Perferendis?
+                </div>
+            </div>
+        </div>
+        <div class="abbook">
+            <img src="ebookweb8448.jpeg.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="preview">
+        <div class="titlepre">
+            Preview at glance
+        </div>
+        <div class="fulconpre" id="btn1">
+            <div class="tagpre">
+                introducing ebook_chapter1
+            </div>
+            <div class="prepara">
+                <div class="prep1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam accusantium. Ut optio totam
+                    esse illo consequatur maxime provident tempora quod ipsa sit. Placeat aspernatur eum fugiat id natus
+                    sunt.
+                </div>
+                <br>
+                <div class="prep2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro nobis tempora doloribus,
+                    vitae repellat sint quo quidem consectetur corporis qui nesciunt deserunt veniam minima beatae nihil
+                    placeat, veritatis esse.
+                </div>
+            </div>
+            <br>
+            <div class="prep3">
+                <div class="MO">
+                    <div class="ho">,,</div>
+                    <div class="conp3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sequi cum laudantium ipsam,
+                        tempore provident odio repellat.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="prep8">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro nobis tempora doloribus,
+                vitae repellat sint quo quidem consectetur corporis qui nesciunt deserunt veniam minima beatae nihil
+                placeat, veritatis esse.
+            </div>
+        </div>
+        <div class="fulconpre hide" id="btn2">
+            <div class="tagpre">
+                introducing ebook_chapter2
+            </div>
+            <div class="prepara">
+                <div class="prep1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam accusantium. Ut optio totam
+                    esse illo consequatur maxime provident tempora quod ipsa sit. Placeat aspernatur eum fugiat id natus
+                    sunt.
+                </div>
+                <br>
+                <div class="prep2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro nobis tempora doloribus,
+                    vitae repellat sint quo quidem consectetur corporis qui nesciunt deserunt veniam minima beatae nihil
+                    placeat, veritatis esse.
+                </div>
+            </div>
+            <br>
+            <div class="prep3">
+                <div class="MO">
+                    <div class="ho">,,</div>
+                    <div class="conp3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sequi cum laudantium ipsam,
+                        tempore provident odio repellat.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="prep8">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro nobis tempora doloribus,
+                vitae repellat sint quo quidem consectetur corporis qui nesciunt deserunt veniam minima beatae nihil
+                placeat, veritatis esse.
+            </div>
+        </div>
+        <div class="fulconpre hide" id="btn3">
+            <div class="tagpre">
+                introducing ebook_chapter3
+            </div>
+            <div class="prepara">
+                <div class="prep1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam accusantium. Ut optio totam
+                    esse illo consequatur maxime provident tempora quod ipsa sit. Placeat aspernatur eum fugiat id natus
+                    sunt.
+                </div>
+                <br>
+                <div class="prep2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro nobis tempora doloribus,
+                    vitae repellat sint quo quidem consectetur corporis qui nesciunt deserunt veniam minima beatae nihil
+                    placeat, veritatis esse.
+                </div>
+            </div>
+            <br>
+            <div class="prep3">
+                <div class="MO">
+                    <div class="ho">,,</div>
+                    <div class="conp3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sequi cum laudantium ipsam,
+                        tempore provident odio repellat.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="prep8">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro nobis tempora doloribus,
+                vitae repellat sint quo quidem consectetur corporis qui nesciunt deserunt veniam minima beatae nihil
+                placeat, veritatis esse.
+            </div>
+        </div>
+        <div class="fulconpre hide" id="btn4">
+            <div class="tagpre">
+                introducing ebook_chapter4
+            </div>
+            <div class="prepara">
+                <div class="prep1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam accusantium. Ut optio totam
+                    esse illo consequatur maxime provident tempora quod ipsa sit. Placeat aspernatur eum fugiat id natus
+                    sunt.
+                </div>
+                <br>
+                <div class="prep2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro nobis tempora doloribus,
+                    vitae repellat sint quo quidem consectetur corporis qui nesciunt deserunt veniam minima beatae nihil
+                    placeat, veritatis esse.
+                </div>
+            </div>
+            <br>
+            <div class="prep3">
+                <div class="MO">
+                    <div class="ho">,,</div>
+                    <div class="conp3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sequi cum laudantium ipsam,
+                        tempore provident odio repellat.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="prep8">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro nobis tempora doloribus,
+                vitae repellat sint quo quidem consectetur corporis qui nesciunt deserunt veniam minima beatae nihil
+                placeat, veritatis esse.
+            </div>
+        </div>
+        <div class="fulconpre hide" id="btn5">
+            <div class="tagpre">
+                introducing ebook_chapter5
+            </div>
+            <div class="prepara">
+                <div class="prep1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam accusantium. Ut optio totam
+                    esse illo consequatur maxime provident tempora quod ipsa sit. Placeat aspernatur eum fugiat id natus
+                    sunt.
+                </div>
+                <br>
+                <div class="prep2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro nobis tempora doloribus,
+                    vitae repellat sint quo quidem consectetur corporis qui nesciunt deserunt veniam minima beatae nihil
+                    placeat, veritatis esse.
+                </div>
+            </div>
+            <br>
+            <div class="prep3">
+                <div class="MO">
+                    <div class="ho">,,</div>
+                    <div class="conp3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sequi cum laudantium ipsam,
+                        tempore provident odio repellat.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="prep8">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro nobis tempora doloribus,
+                vitae repellat sint quo quidem consectetur corporis qui nesciunt deserunt veniam minima beatae nihil
+                placeat, veritatis esse.
+            </div>
+        </div>
+        <div class="gridcontainer">
+            <div class="item">
+                <div class="item1"><button type="button" id="btn1" onclick="ch1()" class="btn">Chapter 1</button></div>
+                <div class="item2"><button type="button" id="btn2" onclick="ch2()" class="btn">Chapter 2</button></div>
+                <div class="item3"><button type="button" id="btn3" onclick="ch3()" class="btn">Chapter 3</button></div>
+                <div class="item4"><button type="button" id="btn4" onclick="ch4()" class="btn">Chapter 4</button></div>
+                <div class="item5"><button type="button" id="btn5" onclick="ch5()" class="btn">Chapter 5</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="sophia">
+        <div class="nameso">
+            Prof,Sophia
+        </div>
+        <div class="sophiafulpara">
+            <div class="so1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam accusantium. Ut optio totam
+                esse illo consequatur maxime provident tempora quod ipsa sit. Placeat aspernatur eum fugiat id natus
+                sunt.
+            </div>
+            <br>
+            <div class="so2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis porro nobis tempora doloribus,
+                vitae repellat sint quo quidem consectetur corporis qui nesciunt deserunt.
+            </div>
+        </div>
+        <div class="sophiaimg">
+            <img src="proft.jpeg.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="saytitle">
+        What pepole saying...
+    </div>
+    <div class="allsay">
+        <div class="say1">
+            <div class="sayimg">
+                <div class="redsay1">
+                    <div class="redmi1">
+                        <img src="border.1img.jpeg.jpg" alt="">
+                        <span>Arsha</span>
+                    </div>
+                    <div class="say1para">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates sapiente voluptatem aliquid
+                        doloremque. Deleniti consequuntur eius, ab voluptatibus dignissimos cum hic, voluptate fuga
+                        consequatur cupiditate officiis ex corporis quis dolor.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="say2">
+            <div class="say2img">
+                <div class="redsay2">
+                    <div class="redmi2">
+                        <img src="border.2img.jpeg.jpg" alt="">
+                        <span>John</span>
+                    </div>
+                    <div class="say2para">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates sapiente voluptatem aliquid
+                        doloremque. Deleniti consequuntur eius, ab voluptatibus dignissimos cum hic, voluptate fuga
+                        consequatur cupiditate officiis ex corporis quis dolor.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="say3">
+            <div class="say3img">
+                <div class="redsay3">
+                    <div class="redmi3">
+                        <img src="border.3img.jpeg.jpg" alt="">
+                        <span>Dessily</span>
+                    </div>
+                    <div class="say3para">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates sapiente voluptatem aliquid
+                        doloremque. Deleniti consequuntur eius, ab voluptatibus dignissimos cum hic, voluptate fuga
+                        consequatur cupiditate officiis ex corporis quis dolor.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="fullcontact">
+            <div class="tag">
+                Contact
+            </div>
+            <br>
+            <div class="para">
+                @Lorem ipsum dolor sit amet consectetur adipisicing.
+                <br>
+                <br>
+                sit met consectetur adipisicing.
+                <br> 
+                <br>
+                Adipisicing Possimus, minima.
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                ipsum dolor, consectetur adipisicing elit. Possimus, beatae?
+            </div>
+        </div>
+        <div class="contactbox">
+            <div class="head">
+                Get your free <br>
+                ebook
+            </div>
+            <br>
+            <br>
+            <div class="input1">
+                <input type="text" placeholder="Your Name">
+                <br>
+                <br>
+                <input type="email" placeholder="Your Email">
+            </div>
+            <br>
+            <button type="submit"></button>
+            <div class="submit">
+                submit your information
+            </div>
+            <div class="input2">
+                <input type="text" placeholder="Your Subject">
+                <br>
+                <br>
+                <textarea name="Message" placeholder="Message"  cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function ch1() {
+            document.getElementById('btn1').style.display = 'block';
+            document.getElementById('btn2').style.display = 'none';
+            document.getElementById('btn3').style.display = 'none';
+            document.getElementById('btn4').style.display = 'none';
+            document.getElementById('btn5').style.display = 'none';
+        }
+        function ch2() {
+            document.getElementById('btn2').style.display = 'block';
+            document.getElementById('btn1').style.display = 'none';
+            document.getElementById('btn3').style.display = 'none';
+            document.getElementById('btn4').style.display = 'none';
+            document.getElementById('btn5').style.display = 'none';
+        }
+        function ch3() {
+            document.getElementById('btn3').style.display = 'block';
+            document.getElementById('btn1').style.display = 'none';
+            document.getElementById('btn2').style.display = 'none';
+            document.getElementById('btn4').style.display = 'none';
+            document.getElementById('btn5').style.display = 'none';
+        }
+        function ch4() {
+            document.getElementById('btn4').style.display = 'block';
+            document.getElementById('btn1').style.display = 'none';
+            document.getElementById('btn2').style.display = 'none';
+            document.getElementById('btn3').style.display = 'none';
+            document.getElementById('btn5').style.display = 'none';
+        }
+        function ch5() {
+            document.getElementById('btn5').style.display = 'block';
+            document.getElementById('btn1').style.display = 'none';
+            document.getElementById('btn2').style.display = 'none';
+            document.getElementById('btn3').style.display = 'none';
+            document.getElementById('btn4').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
